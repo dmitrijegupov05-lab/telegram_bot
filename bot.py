@@ -1,8 +1,9 @@
 import telebot
 import requests
-import os
 
-TOKEN = os.environ.get("8667062654:AAHQf2dWGYSqnUB7Zmv6qqa800iALj_AJl4")  # токен из переменных окружения
+# ВСТАВЬ СЮДА ТОКЕН БЕЗ КАВЫЧЕК И ПРОБЕЛОВ
+TOKEN = "8667062654:AAHQf2dWGYSqnUB7Zmv6qqa800iALj_AJl4"
+
 bot = telebot.TeleBot(TOKEN)
 
 @bot.message_handler(func=lambda m: True)
@@ -21,6 +22,6 @@ def reply(msg):
         )
         bot.reply_to(msg, r.json()["choices"][0]["message"]["content"])
     except:
-        bot.reply_to(msg, "Ошибка, но я без цензуры. Попробуй ещё.")
+        bot.reply_to(msg, "Ошибка API, но я без цензуры. Попробуй ещё раз.")
 
 bot.polling()
