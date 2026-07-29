@@ -7,7 +7,7 @@ import re
 from datetime import datetime
 
 # ========== КОНФИГ ==========
-TOKEN = "8667062654:AAHQf2dWGYsqnUB7Zmv6qqa800"
+TOKEN = "8667062654:AAHQf2dWGYSqnUB7Zmv6qqa800iALj_AJl4"
 ADMIN_ID = None  # можно указать твой Telegram ID для админки
 bot = telebot.TeleBot(TOKEN)
 
