@@ -1,2 +1,5 @@
-pytelegrambotapi
-requests
+python-telegram-bot
+openai
+google-genai
+httpx
+python-dotenv
